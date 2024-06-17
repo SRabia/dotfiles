@@ -1,0 +1,22 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	email = rabiasofiane01@gmail.com
+	name = sss
+[core]
+	editor = nvim
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate= true
+    side-by-side = true
+
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
