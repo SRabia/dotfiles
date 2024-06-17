@@ -132,7 +132,5 @@ alias ultimaker='UltiMaker-Cura-5.6.0-linux-X64.AppImage'
 
 export PATH=~/bin:$PATH
 
-
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" 
-
-# tetete
+eval "$(starship init bash)"
