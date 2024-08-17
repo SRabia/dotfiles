@@ -136,9 +136,11 @@ export PATH=~/bin:$PATH
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" 
 eval "$(starship init bash)"
 eval "$(fzf --bash)"
-
+eval "$(zoxide init bash)"
 # -- Use fd instead of fzf --
 
+
+source ~/fzf-git.sh/fzf-git.sh
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
@@ -155,5 +157,10 @@ _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
 
-source ~/fzf-git.sh/fzf-git.sh
+export PATH=~/bash:$PATH
+
+. "$HOME/.atuin/bin/env"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"
 
