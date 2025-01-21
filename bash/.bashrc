@@ -159,9 +159,9 @@ _fzf_compgen_dir() {
 
 export PATH=~/bash:$PATH
 
-# . "$HOME/.atuin/bin/env"
+. "$HOME/.atuin/bin/env"
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
-# eval "$(atuin init bash)"
+eval "$(atuin init bash)"
 
 eval "$(ssh-agent -s)"
