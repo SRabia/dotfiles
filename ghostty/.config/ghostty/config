@@ -1,0 +1,11 @@
+gtk-tabs-location = hidden
+gtk-titlebar= false
+font-size = 14
+scrollback-limit = 10_000
+clipboard-read = allow
+clipboard-paste-protection = false
+window-decoration = false
+
+# Transparency
+background-opacity = 0.8
+background-blur-radius = 20
