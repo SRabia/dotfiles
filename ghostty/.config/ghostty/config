@@ -9,3 +9,9 @@ window-decoration = false
 # Transparency
 background-opacity = 0.8
 background-blur-radius = 20
+
+# reload config
+# cmd+shift+
+
+# keybingins:
+# https://gist.github.com/hensg/43bc71c21d1f79385892352a390aa2ca

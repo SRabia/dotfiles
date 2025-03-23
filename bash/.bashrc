@@ -118,9 +118,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias bitcoin='bitcoin-cli'
-export PATH=~/Qt/Tools/QtCreator/bin:$PATH
 alias v='nvim'
+export EDITOR='nvim'
+export VISUAL='nvim'
+export TERMINAL=/usr/bin/ghostty
 
 alias electrum='electrum-4.5.4-x86_64.AppImage'
 alias ultimaker='UltiMaker-Cura-5.6.0-linux-X64.AppImage'
@@ -133,14 +134,14 @@ alias ultimaker='UltiMaker-Cura-5.6.0-linux-X64.AppImage'
 
 export PATH=~/bin:$PATH
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" 
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" 
 eval "$(starship init bash)"
 eval "$(fzf --bash)"
 eval "$(zoxide init bash)"
 # -- Use fd instead of fzf --
 
 
-source ~/fzf-git.sh/fzf-git.sh
+source ~/fzf-git.sh
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"

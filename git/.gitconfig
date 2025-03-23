@@ -3,7 +3,7 @@
 	helper = !/usr/bin/gh auth git-credential
 [user]
 	email = rabiasofiane01@gmail.com
-	name = sss
+	name = s
 [core]
 	editor = nvim
     pager = delta
