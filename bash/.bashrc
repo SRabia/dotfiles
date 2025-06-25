@@ -94,6 +94,10 @@ alias la='ls -A'
 alias l='ls -CF'
 alias cat='bat'
 
+alias connect-rose='bluetoothctl connect D5:A0:32:45:F0:E3'
+alias connect-bose='bluetoothctl connect E4:58:BC:3A:81:A5'
+
+[Bose QC Headphones]> connect E4:58:BC:3A:81:A5
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
